@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a20ca956.css",
+    "main.js": "/static/js/main.13717168.js",
+    "static/media/Python.png": "/static/media/Python.82efb64f8698a267f8bf.png",
+    "static/media/Telcon.jpeg": "/static/media/Telcon.3052a3c5fa612835b89b.jpeg",
+    "static/media/logo.png": "/static/media/logo.c7c8c0f06349816bb1cf.png",
+    "static/media/DMA.png": "/static/media/DMA.2aed4835e2c153ea6726.png",
+    "static/media/MySQL.png": "/static/media/MySQL.0fa268260d693783ed38.png",
+    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/Laravel.png": "/static/media/Laravel.279e3fcb19d440713887.png",
+    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/Java.png": "/static/media/Java.6c64373d3b7415758078.png",
+    "index.html": "/index.html",
+    "main.a20ca956.css.map": "/static/css/main.a20ca956.css.map",
+    "main.13717168.js.map": "/static/js/main.13717168.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a20ca956.css",
+    "static/js/main.13717168.js"
+  ]
+}
