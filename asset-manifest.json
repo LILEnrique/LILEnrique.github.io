@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b96e70ab.css",
-    "main.js": "/static/js/main.7115df93.js",
+    "main.css": "/static/css/main.a48864f5.css",
+    "main.js": "/static/js/main.ff53b53a.js",
     "static/media/Perfil.jpg": "/static/media/Perfil.c716a99c655304eabdab.jpg",
     "static/media/Inter.var.woff2?v=3.18": "/static/media/Inter.var.9df5db385c3370707c5b.woff2",
     "static/media/PLM.png": "/static/media/PLM.e14369a24c6780ab426c.png",
@@ -45,8 +45,8 @@
     "static/media/Inter-Thin.woff2?v=3.18": "/static/media/Inter-Thin.de9194d1cf4ce0dd3b56.woff2",
     "static/media/Inter-Regular.woff2?v=3.18": "/static/media/Inter-Regular.6cc68d6b835a3dd06e7e.woff2",
     "static/media/Telcon.jpeg": "/static/media/Telcon.074f6bcb235068ba0884.jpeg",
-    "static/media/logo.png": "/static/media/logo.acc0978d984c65ee4a9e.png",
     "static/media/Weather.png": "/static/media/Weather.45a1de3c034c6aeaa33b.png",
+    "static/media/logo.png": "/static/media/logo.b8a23702616a2949787b.png",
     "static/media/Python.png": "/static/media/Python.6a9a1acdc4906f7a419e.png",
     "static/media/DMA.png": "/static/media/DMA.33a0cb35262217f83fd1.png",
     "static/media/MySQL.png": "/static/media/MySQL.1ba4e37934f07de05c75.png",
@@ -56,11 +56,11 @@
     "static/media/Laravel.png": "/static/media/Laravel.891c213c8468827b7775.png",
     "static/media/oooscillate.svg": "/static/media/oooscillate.c09b3f8d8295d0b6451ed21e5fc5fcc6.svg",
     "index.html": "/index.html",
-    "main.b96e70ab.css.map": "/static/css/main.b96e70ab.css.map",
-    "main.7115df93.js.map": "/static/js/main.7115df93.js.map"
+    "main.a48864f5.css.map": "/static/css/main.a48864f5.css.map",
+    "main.ff53b53a.js.map": "/static/js/main.ff53b53a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b96e70ab.css",
-    "static/js/main.7115df93.js"
+    "static/css/main.a48864f5.css",
+    "static/js/main.ff53b53a.js"
   ]
 }
