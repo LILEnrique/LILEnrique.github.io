@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.a48864f5.css",
-    "main.js": "/static/js/main.ff53b53a.js",
-    "static/media/Perfil.jpg": "/static/media/Perfil.c716a99c655304eabdab.jpg",
+    "main.css": "/static/css/main.d0d845be.css",
+    "main.js": "/static/js/main.90af946d.js",
+    "static/media/Perfil.jpg": "/static/media/Perfil.a1666400c2f56c7fc915.jpg",
     "static/media/Inter.var.woff2?v=3.18": "/static/media/Inter.var.9df5db385c3370707c5b.woff2",
-    "static/media/PLM.png": "/static/media/PLM.e14369a24c6780ab426c.png",
     "static/media/Inter-italic.var.woff2?v=3.18": "/static/media/Inter-italic.var.b27297c148a7ef314ce2.woff2",
     "static/media/Inter-roman.var.woff2?v=3.18": "/static/media/Inter-roman.var.b65534c5223684261945.woff2",
+    "static/media/PLM.png": "/static/media/PLM.74dc0bcd4bd100bd222c.png",
     "static/media/Inter-SemiBoldItalic.woff?v=3.18": "/static/media/Inter-SemiBoldItalic.80d799bef2a34b9d253c.woff",
     "static/media/Inter-BoldItalic.woff?v=3.18": "/static/media/Inter-BoldItalic.32e2b20f6958d2d2b42d.woff",
     "static/media/Inter-MediumItalic.woff?v=3.18": "/static/media/Inter-MediumItalic.2812ec5af03af477a492.woff",
@@ -15,7 +15,6 @@
     "static/media/Inter-ExtraLightItalic.woff?v=3.18": "/static/media/Inter-ExtraLightItalic.a7a00555699d20ff4912.woff",
     "static/media/Inter-BlackItalic.woff?v=3.18": "/static/media/Inter-BlackItalic.70d2cf354617b8400370.woff",
     "static/media/Inter-ThinItalic.woff?v=3.18": "/static/media/Inter-ThinItalic.6b5565d76adf0660b406.woff",
-    "static/media/Saly-13.png": "/static/media/Saly-13.f0a05f9a9eea0ce0e7d5.png",
     "static/media/Inter-Italic.woff?v=3.18": "/static/media/Inter-Italic.635afeed439bcb3e4823.woff",
     "static/media/Inter-Bold.woff?v=3.18": "/static/media/Inter-Bold.1c3dfbb05cd4ae02710e.woff",
     "static/media/Inter-SemiBold.woff?v=3.18": "/static/media/Inter-SemiBold.25b1ffc9587070462342.woff",
@@ -23,6 +22,7 @@
     "static/media/Inter-Medium.woff?v=3.18": "/static/media/Inter-Medium.f5549f68ca7db479bc7d.woff",
     "static/media/Inter-ExtraLight.woff?v=3.18": "/static/media/Inter-ExtraLight.7b7bd05c50e77a1dea5f.woff",
     "static/media/Inter-Light.woff?v=3.18": "/static/media/Inter-Light.c08cfeeb313675a65efc.woff",
+    "static/media/Saly-13.png": "/static/media/Saly-13.510b72362f54effb6008.png",
     "static/media/Inter-Black.woff?v=3.18": "/static/media/Inter-Black.e258f99875304915b846.woff",
     "static/media/Inter-Thin.woff?v=3.18": "/static/media/Inter-Thin.fcc912460dcaea1ee8d4.woff",
     "static/media/Inter-Regular.woff?v=3.18": "/static/media/Inter-Regular.8398b3762d7b06fc3b8c.woff",
@@ -44,23 +44,23 @@
     "static/media/Inter-Black.woff2?v=3.18": "/static/media/Inter-Black.ef2d12b9f04d00e319f2.woff2",
     "static/media/Inter-Thin.woff2?v=3.18": "/static/media/Inter-Thin.de9194d1cf4ce0dd3b56.woff2",
     "static/media/Inter-Regular.woff2?v=3.18": "/static/media/Inter-Regular.6cc68d6b835a3dd06e7e.woff2",
-    "static/media/Telcon.jpeg": "/static/media/Telcon.074f6bcb235068ba0884.jpeg",
-    "static/media/Weather.png": "/static/media/Weather.45a1de3c034c6aeaa33b.png",
-    "static/media/logo.png": "/static/media/logo.b8a23702616a2949787b.png",
+    "static/media/Telcon.jpeg": "/static/media/Telcon.fec48d3ab47e90fa7a6a.jpeg",
+    "static/media/Weather.png": "/static/media/Weather.b418ecd3af17dc4b464b.png",
     "static/media/Python.png": "/static/media/Python.6a9a1acdc4906f7a419e.png",
-    "static/media/DMA.png": "/static/media/DMA.33a0cb35262217f83fd1.png",
+    "static/media/DMA.png": "/static/media/DMA.c54806d771c8faba0a53.png",
     "static/media/MySQL.png": "/static/media/MySQL.1ba4e37934f07de05c75.png",
-    "static/media/cells.png": "/static/media/cells.1d2e7f896766b0dea79f.png",
-    "static/media/MACD.png": "/static/media/MACD.0b93eb3685b73b27b402.png",
+    "static/media/cells.png": "/static/media/cells.3fdd7ac51559ef04c0e3.png",
+    "static/media/MACD.png": "/static/media/MACD.c3afdfe817f7a68de7b1.png",
     "static/media/ccchaos.svg": "/static/media/ccchaos.2530548f38af5c6f5567d87bb808ad07.svg",
-    "static/media/Laravel.png": "/static/media/Laravel.891c213c8468827b7775.png",
+    "static/media/Laravel.png": "/static/media/Laravel.8cb83976381bfeb89e77.png",
+    "static/media/logo.png": "/static/media/logo.818605ab743d2a4b8c7a.png",
     "static/media/oooscillate.svg": "/static/media/oooscillate.c09b3f8d8295d0b6451ed21e5fc5fcc6.svg",
     "index.html": "/index.html",
-    "main.a48864f5.css.map": "/static/css/main.a48864f5.css.map",
-    "main.ff53b53a.js.map": "/static/js/main.ff53b53a.js.map"
+    "main.d0d845be.css.map": "/static/css/main.d0d845be.css.map",
+    "main.90af946d.js.map": "/static/js/main.90af946d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a48864f5.css",
-    "static/js/main.ff53b53a.js"
+    "static/css/main.d0d845be.css",
+    "static/js/main.90af946d.js"
   ]
 }
