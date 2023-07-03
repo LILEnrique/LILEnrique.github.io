@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f82fc71e.css",
-    "main.js": "/static/js/main.b98c95e3.js",
-    "static/media/Perfil.jpg": "/static/media/Perfil.7eb89271a0d84c466fbe.jpg",
-    "static/media/PLM.png": "/static/media/PLM.dacd74b8e9ba36349fae.png",
-    "static/media/Telcon.jpeg": "/static/media/Telcon.4c554eeb2533afa1d212.jpeg",
-    "static/media/Weather.png": "/static/media/Weather.014987e8406141cecdb0.png",
-    "static/media/DMA.png": "/static/media/DMA.7d4176f1db5221e4ecb4.png",
-    "static/media/cells.png": "/static/media/cells.6dd54fa7f06b1f23b50b.png",
-    "static/media/MACD.png": "/static/media/MACD.6437ea63021952a29663.png",
+    "main.css": "/static/css/main.72193783.css",
+    "main.js": "/static/js/main.e4e3adf3.js",
+    "static/media/Perfil.jpg": "/static/media/Perfil.c28086db912984327685.jpg",
+    "static/media/Telcon.jpeg": "/static/media/Telcon.2fdd815044bf4c97a271.jpeg",
+    "static/media/DMA.png": "/static/media/DMA.98e70989e57a48aa6538.png",
+    "static/media/Weather.png": "/static/media/Weather.0b8e9c4a336578f1c75f.png",
+    "static/media/TodoApp.png": "/static/media/TodoApp.b747e835568de66fbd08.png",
+    "static/media/MACD.png": "/static/media/MACD.3c7690436c47eb10391a.png",
+    "static/media/cells.png": "/static/media/cells.b5a61f4cd9d36e3c6af2.png",
+    "static/media/LogoLQ.png": "/static/media/LogoLQ.dda6fb61348b042d30b2.png",
     "index.html": "/index.html",
-    "main.f82fc71e.css.map": "/static/css/main.f82fc71e.css.map",
-    "main.b98c95e3.js.map": "/static/js/main.b98c95e3.js.map"
+    "main.72193783.css.map": "/static/css/main.72193783.css.map",
+    "main.e4e3adf3.js.map": "/static/js/main.e4e3adf3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f82fc71e.css",
-    "static/js/main.b98c95e3.js"
+    "static/css/main.72193783.css",
+    "static/js/main.e4e3adf3.js"
   ]
 }
