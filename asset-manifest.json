@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.c01a8dae.css",
-    "main.js": "/static/js/main.a02a70cd.js",
+    "main.js": "/static/js/main.9f655839.js",
     "static/media/Perfil.jpg": "/static/media/Perfil.c28086db912984327685.jpg",
     "static/media/Telcon.jpeg": "/static/media/Telcon.2fdd815044bf4c97a271.jpeg",
     "static/media/DMA.png": "/static/media/DMA.98e70989e57a48aa6538.png",
     "static/media/Weather.png": "/static/media/Weather.0b8e9c4a336578f1c75f.png",
-    "static/media/TodoApp.png": "/static/media/TodoApp.b747e835568de66fbd08.png",
     "static/media/MACD.png": "/static/media/MACD.3c7690436c47eb10391a.png",
+    "static/media/TodoApp.png": "/static/media/TodoApp.2f9a296abceb86521f4a.png",
     "static/media/cells.png": "/static/media/cells.b5a61f4cd9d36e3c6af2.png",
     "static/media/LogoLQ.png": "/static/media/LogoLQ.dda6fb61348b042d30b2.png",
     "index.html": "/index.html",
     "main.c01a8dae.css.map": "/static/css/main.c01a8dae.css.map",
-    "main.a02a70cd.js.map": "/static/js/main.a02a70cd.js.map"
+    "main.9f655839.js.map": "/static/js/main.9f655839.js.map"
   },
   "entrypoints": [
     "static/css/main.c01a8dae.css",
-    "static/js/main.a02a70cd.js"
+    "static/js/main.9f655839.js"
   ]
 }
