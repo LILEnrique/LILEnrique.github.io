@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c01a8dae.css",
-    "main.js": "/static/js/main.9f655839.js",
+    "main.js": "/static/js/main.6216f0d9.js",
     "static/media/Perfil.jpg": "/static/media/Perfil.c28086db912984327685.jpg",
     "static/media/Telcon.jpeg": "/static/media/Telcon.2fdd815044bf4c97a271.jpeg",
     "static/media/DMA.png": "/static/media/DMA.98e70989e57a48aa6538.png",
@@ -12,10 +12,10 @@
     "static/media/LogoLQ.png": "/static/media/LogoLQ.dda6fb61348b042d30b2.png",
     "index.html": "/index.html",
     "main.c01a8dae.css.map": "/static/css/main.c01a8dae.css.map",
-    "main.9f655839.js.map": "/static/js/main.9f655839.js.map"
+    "main.6216f0d9.js.map": "/static/js/main.6216f0d9.js.map"
   },
   "entrypoints": [
     "static/css/main.c01a8dae.css",
-    "static/js/main.9f655839.js"
+    "static/js/main.6216f0d9.js"
   ]
 }
