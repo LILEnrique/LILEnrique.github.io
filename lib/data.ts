@@ -1,5 +1,5 @@
 import React from "react";
-import Weather from "@/public/projects/Weather.png";
+import Weather from "@/public/projects/WeatherApp.png";
 import DMA from "@/public/projects/DMA.png";
 import Telcon from "@/public/projects/Telcon.jpeg";
 import Todo from "@/public/projects/TodoApp.png";
@@ -72,20 +72,20 @@ export const projectsData = [
     projectLink: "https://github.com/LILEnrique/Weather-App-ReactJS-TailwindCSS",
   },
   {
-    title: "Todo App",
-    description:
-      "Una Todo App con funcionalidad CRUD que permite gestionar y organizar tareas dinámicamente con almacenamiento y persistencia en tiempo real.",
-    tags: ["ReactJS", "TailwindCSS", "Firebase"],
-    imageUrl: Todo,
-    projectLink: "https://github.com/LILEnrique/Todo-App-ReactJS-TailwindCSS-Firebase",
-  },
-  {
     title: "Teleprocesos",
     description:
       "Plataforma para el área de la salud, ofrece servicios para realizar consultas telemáticas de manera eficiente y segura a las instituciones de salud.",
     tags: ["Java", "ZK", "SQL Server"],
     imageUrl: Telcon,
     projectLink: "",
+  },
+  {
+    title: "MACD",
+    description:
+      "Herramienta que permite incorporar dinámicamente nuevos campos en formularios sin alterar la estructura base de las tablas de una BD.",
+    tags: ["PHP", "Laravel", "Bootstrap", "SQL Server"],
+    imageUrl: MACD,
+    projectLink: "https://github.com/LILEnrique/Modulo-Administrador-De-Campos-Dinamicos",
   },
   {
     title: "Detector de células",
@@ -96,11 +96,11 @@ export const projectsData = [
     projectLink: "https://github.com/LILEnrique/Cells",
   },
   {
-    title: "MACD",
+    title: "Todo App",
     description:
-      "Herramienta que permite incorporar dinámicamente nuevos campos en formularios sin alterar la estructura base de las tablas de una BD.",
-    tags: ["PHP", "Laravel", "Bootstrap", "SQL Server"],
-    imageUrl: MACD,
-    projectLink: "https://github.com/LILEnrique/Modulo-Administrador-De-Campos-Dinamicos",
+      "Una Todo App con funcionalidad CRUD que permite gestionar y organizar tareas dinámicamente con almacenamiento y persistencia en tiempo real.",
+    tags: ["ReactJS", "TailwindCSS", "Firebase"],
+    imageUrl: Todo,
+    projectLink: "https://github.com/LILEnrique/Todo-App-ReactJS-TailwindCSS-Firebase",
   },
 ] as const;

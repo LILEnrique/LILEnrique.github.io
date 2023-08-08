@@ -13,7 +13,9 @@ export default function Projects() {
       <h2 className="pb-4 text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-zinc-200/60 via-zinc-200 to-zinc-200/60 text-center ">
         Proyectos<span className="text-primary">.</span>
       </h2>
-      <p className="pb-12 text-lg text-zinc-300 text-center">Estos son algunos de los proyectos que he desarrollado recientemente.</p>
+      <p className="pb-12 text-lg text-zinc-300 text-center">
+        Estos son algunos de los proyectos que he desarrollado y colaborado recientemente.
+      </p>
       <div>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>

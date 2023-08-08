@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Profile from "@/public/Perfil.jpg";
+import Profile from "@/public/AboutPhoto.jpg";
 import Image from "next/image";
 import { useSectionInView } from "@/lib/hooks";
 
