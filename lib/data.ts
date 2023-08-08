@@ -82,7 +82,7 @@ export const projectsData = [
   {
     title: "MACD",
     description:
-      "Herramienta que permite incorporar dinámicamente nuevos campos en formularios sin alterar la estructura base de las tablas de una BD.",
+      "Aplicación que permite incorporar dinámicamente nuevos campos en formularios sin alterar la estructura base de las tablas de una BD.",
     tags: ["PHP", "Laravel", "Bootstrap", "SQL Server"],
     imageUrl: MACD,
     projectLink: "https://github.com/LILEnrique/Modulo-Administrador-De-Campos-Dinamicos",

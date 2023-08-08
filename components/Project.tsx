@@ -43,11 +43,11 @@ export default function Project({ title, description, tags, imageUrl, projectLin
             href={projectLink ? projectLink : "#"}
             target="_blank"
             rel="noopener noreferrer"
-            className=" group flex items-center  justify-center  gap-2 h-[3rem] w-full text-zinc-950 hover:bg-zinc-50 bg-primary rounded-xl transition-all  hover:scale-105 font-medium "
+            className=" group-[1]: flex items-center  justify-center  gap-2 h-[3rem] w-full text-zinc-950 hover:bg-zinc-50 bg-primary rounded-xl transition-all  hover:scale-105 font-medium "
           >
             Ver proyecto{" "}
             <span>
-              <AiOutlineArrowRight className="font-medium  group-hover:translate-x-1 transition-transform duration-150 ease-in-out ml-1 " />
+              <AiOutlineArrowRight className="font-medium  group-[1]-hover:translate-x-1 transition-transform duration-150 ease-in-out ml-1 " />
             </span>
           </a>
         </div>
