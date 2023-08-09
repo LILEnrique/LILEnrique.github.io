@@ -34,7 +34,7 @@ export default function Project({ title, description, tags, imageUrl, projectLin
           <p className="mt-2 text-sm">{description}</p>
           <ul className="flex flex-wrap py-2 gap-1 my-auto">
             {tags.map((tag, index) => (
-              <li className="bg-zinc-900 text-zinc-50 text-xs dark:bg-zinc-200  dark:text-zinc-950 px-2 py-1  rounded-xl " key={index}>
+              <li className="bg-zinc-800 text-zinc-50 text-xs dark:bg-zinc-200  dark:text-zinc-950 px-2 py-1  rounded-xl " key={index}>
                 {tag}
               </li>
             ))}
