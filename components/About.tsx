@@ -41,11 +41,11 @@ export default function About() {
                 style={{ borderRadius: "67% 33% 61% 39% / 47% 30% 70% 53%" }}
                 className="md:w-80 sm:w-72 p-4"
               />
-              <div className="flex flex-col justify-center mt-8 text-zinc-300 ">
-                <p className="text-xl font-semibold leading-8 tracking-tight text-zinc-300 text-center">
+              <div className="flex flex-col justify-center mt-8 ">
+                <p className="text-xl font-semibold leading-8 tracking-tight text-center">
                   Ingeniero Civil Informático<span className="text-primary ">.</span>
                 </p>
-                <p className="text-xl leading-8 tracking-tight text-zinc-400 text-center">Desarrollador de software.</p>
+                <p className="text-xl leading-8 tracking-tight text-gray-600 dark:text-gray-400  text-center">Desarrollador de software.</p>
               </div>
             </motion.div>
             {/* Content */}
@@ -55,22 +55,22 @@ export default function About() {
               initial="initial"
               whileInView="whileInView"
             >
-              <h2 className="pb-4 text-4xl font-black  text-transparent bg-clip-text bg-gradient-to-r from-zinc-200/60 via-zinc-200 to-zinc-200/60 text-center ">
+              <h2 className="primaryText pb-4 text-4xl font-black text-center ">
                 Sobre mí
-                <span className="text-primary ">.</span>
+                <span className="text-primary dark:invert ">.</span>
               </h2>
               {/* Content #1 */}
-              <p className="mt-8 mb-4 text-zinc-300">
+              <p className="mt-8 mb-4 ">
                 Soy un <strong>Ingeniero Civil Informático</strong> egresado de la <strong>Universidad Católica de Temuco</strong>. Poseo
                 habilidades tanto en el desarrollo de front-end como en el de back-end, así como en la integración de bases de datos y en la
                 seguridad de aplicaciones, utilizando diversas tecnologías y metodologías ágiles.
               </p>
-              <p className="mb-4 text-zinc-300">
+              <p className="mb-4 ">
                 También me preocupo por otros aspectos del desarrollo de proyectos, como la planificación, la comunicación efectiva y la
                 gestión de recursos. Mi pasión por la gestión de proyectos y el trabajo en equipo me ha permitido adquirir valiosas
                 habilidades de liderazgo.
               </p>
-              <p className="mb-4 text-zinc-300">
+              <p className="mb-4 ">
                 <span className="text-primary ">[</span>Siempre estoy en busca de nuevas formas de mejorar mis habilidades y conocimientos
                 para entregar lo mejor de mí en cada proyecto, desafío o meta que me proponga
                 <span className="text-primary ">]</span>

@@ -16,7 +16,7 @@ export default function Header() {
 
   const { activeSection, setActiveSection } = useActiveSectionContext();
   return (
-    <header className="fixed z-30 w-full items-center py-2  bg-opacity-70 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]  bg-background   ">
+    <header className="fixed z-30 w-full items-center py-2  bg-opacity-80 dark:bg-opacity-75 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] bg-zinc-100 dark:bg-background">
       <motion.div className="max-w-5xl px-4 sm:px-0 mx-auto" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
         <div className="flex items-center justify-between h-16 md:h-14">
           <motion.a
@@ -28,11 +28,11 @@ export default function Header() {
             href="#home"
             className="mr-4 group"
           >
-            <Image src={Logo} className=" opacity-90" width={50} alt="Logo" />
+            <Image src={Logo} className="opacity-90 dark:invert" width={60} alt="Logo" />
           </motion.a>
           {/* Desktop navigation */}
-          <nav className="flex font-medium text-md ">
-            <ul className="hidden md:flex flex-wrap items-center justify-end grow text-zinc-300 ">
+          <nav className="flex font-medium ">
+            <ul className="hidden md:flex flex-wrap items-center justify-end grow text-[0.9rem]  ">
               {links.map((link, index) =>
                 index === 0 ? null : (
                   <li className="h-3/4 flex items-center justify-center relative  px-2" key={link.hash}>
@@ -52,7 +52,7 @@ export default function Header() {
               )}
             </ul>
             {/* Hamburger */}
-            <div onClick={handleClick} className="md:hidden z-10 text-zinc-300 hover:text-primary  text-lg">
+            <div onClick={handleClick} className="md:hidden z-10  hover:text-primary  text-lg">
               {!nav ? <FaBars /> : <FaTimes />}
             </div>
             {/* Mobile menu */}
@@ -60,7 +60,7 @@ export default function Header() {
               className={`${
                 !nav
                   ? "hidden"
-                  : "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center bg-background text-zinc-300"
+                  : "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center bg-zinc-100 dark:bg-background"
               } `}
             >
               {links.map((link, index) =>
