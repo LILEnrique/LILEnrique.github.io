@@ -66,7 +66,7 @@ export const projectsData = [
   {
     title: "Weather App",
     description:
-      "Aplicación del clima construida que proporciona información del clima en tiempo real, permite buscar y visualizar informacion de diferentes locaciones.",
+      "Aplicación que proporciona información del clima en tiempo real, permite buscar y visualizar informacion de diferentes locaciones del mundo.",
     tags: ["ReactJS", "TailwindCSS", "OpenWeatherMap"],
     imageUrl: Weather,
     projectLink: "https://github.com/LILEnrique/Weather-App-ReactJS-TailwindCSS",
@@ -74,15 +74,14 @@ export const projectsData = [
   {
     title: "Teleprocesos",
     description:
-      "Plataforma para el área de la salud, ofrece servicios para realizar consultas telemáticas de manera eficiente y segura a las instituciones de salud.",
+      "Plataforma que ofrece servicios para realizar consultas telemáticas de manera eficiente y segura a las instituciones de salud.",
     tags: ["Java", "ZK", "SQL Server"],
     imageUrl: Telcon,
     projectLink: "",
   },
   {
     title: "MACD",
-    description:
-      "Aplicación que permite incorporar dinámicamente nuevos campos en formularios sin alterar la estructura base de las tablas de una BD.",
+    description: "Aplicación que permite incorporar dinámicamente nuevos campos en formularios sin alterar la estructura base de una BD.",
     tags: ["PHP", "Laravel", "Bootstrap", "SQL Server"],
     imageUrl: MACD,
     projectLink: "https://github.com/LILEnrique/Modulo-Administrador-De-Campos-Dinamicos",
@@ -98,7 +97,7 @@ export const projectsData = [
   {
     title: "Todo App",
     description:
-      "Una Todo App con funcionalidad CRUD que permite gestionar y organizar tareas dinámicamente con almacenamiento y persistencia en tiempo real.",
+      "Todo App con funcionalidad CRUD que permite gestionar y organizar tareas dinámicamente con almacenamiento y persistencia en tiempo real.",
     tags: ["ReactJS", "TailwindCSS", "Firebase"],
     imageUrl: Todo,
     projectLink: "https://github.com/LILEnrique/Todo-App-ReactJS-TailwindCSS-Firebase",
