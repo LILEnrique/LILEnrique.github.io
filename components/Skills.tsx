@@ -13,7 +13,7 @@ const fadeInAnimationVariants = {
   whileInView: (index: number) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: 0.05 * index },
+    transition: { delay: 0.03 * index },
   }),
 };
 

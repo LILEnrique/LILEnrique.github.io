@@ -17,13 +17,17 @@ export default function Header() {
   const { activeSection, setActiveSection } = useActiveSectionContext();
   return (
     <header className="fixed z-30 w-full items-center py-2  bg-opacity-80 dark:bg-opacity-75 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] bg-zinc-100 dark:bg-background">
-      <motion.div className="max-w-5xl px-4 sm:px-0 mx-auto" initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
+      <motion.div
+        className="max-w-5xl px-4 sm:px-0 mx-auto"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
+      >
         <div className="flex items-center justify-between h-16 md:h-14">
           <motion.a
             whileHover={{
               scale: 1.2,
               rotate: 360,
-              transition: { duration: 0.3 },
+              transition: { duration: 0.2 },
             }}
             href="#home"
             className="mr-4 group"
@@ -65,16 +69,11 @@ export default function Header() {
             >
               {links.map((link, index) =>
                 index === 0 ? null : (
-                  <motion.li
-                    className="py-6 text-2xl  hover:text-primary  duration-500"
-                    key={link.hash}
-                    initial={{ y: -100, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                  >
+                  <li className="py-6 text-2xl  hover:text-primary  duration-500" key={link.hash}>
                     <Link href={link.hash} onClick={handleClick}>
                       {link.name}
                     </Link>
-                  </motion.li>
+                  </li>
                 )
               )}
             </ul>
