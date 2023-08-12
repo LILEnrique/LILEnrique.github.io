@@ -43,6 +43,9 @@ export default function Contact() {
         variants={scrollElementsShow}
         initial="initial"
         whileInView="whileInView"
+        viewport={{
+          once: true,
+        }}
       >
         <input
           className="h-14 px-4 rounded-xl borderBW dark:bg-zinc-50 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all outline-none"

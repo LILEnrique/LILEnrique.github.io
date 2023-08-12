@@ -10,10 +10,12 @@ const fadeInAnimationVariants = {
     opacity: 0,
     y: 100,
   },
-  whileInView: (index: number) => ({
-    y: 0,
+  animate: (index: number) => ({
     opacity: 1,
-    transition: { delay: 0.03 * index },
+    y: 0,
+    transition: {
+      delay: 0.04 * index,
+    },
   }),
 };
 
@@ -28,14 +30,17 @@ export default function Skills() {
       <p className="pb-12 text-lg">
         Estas son algunas de las tecnologías y herramientas con las que he trabajado durante mi transcurso académico y profesional.
       </p>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg ">
+      <ul className="flex flex-wrap justify-center gap-2 text-lg">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="group drop-shadow-sm rounded-xl bg-zinc-50  hover:bg-opacity-50 px-5 py-3 dark:bg-zinc-600 dark:bg-opacity-10 dark:hover:bg-opacity-20 hover:text-primary borderBW flex items-center justify-center gap-1 "
+            className="group drop-shadow-sm rounded-xl bg-zinc-50 hover:bg-opacity-50 px-5 py-3 dark:bg-zinc-600 dark:bg-opacity-10 dark:hover:bg-opacity-20 hover:text-primary borderBW flex items-center justify-center gap-1 "
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
-            whileInView="whileInView"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
             custom={index}
           >
             {skill.name} <span className="text-xl">{skill.icon}</span>

@@ -34,7 +34,15 @@ export default function About() {
           {/* Section content */}
           <div className="flex flex-col md:flex-row items-center max-w-xl mx-auto md:max-w-none gap-10 md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-8 space-y-reverse md:space-y-0">
             {/* Image */}
-            <motion.div className="z-10 flex-none" variants={scrollElementsShow} initial="initial" whileInView="whileInView">
+            <motion.div
+              className="z-10 flex-none"
+              variants={scrollElementsShow}
+              initial="initial"
+              whileInView="whileInView"
+              viewport={{
+                once: true,
+              }}
+            >
               <Image
                 src={Profile}
                 alt="PerfilPhoto"
@@ -54,6 +62,9 @@ export default function About() {
               variants={scrollElementsShow}
               initial="initial"
               whileInView="whileInView"
+              viewport={{
+                once: true,
+              }}
             >
               <h2 className="primaryText pb-4 text-4xl font-black text-center ">
                 Sobre mí
