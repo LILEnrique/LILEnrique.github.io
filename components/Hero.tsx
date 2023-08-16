@@ -12,7 +12,11 @@ export default function Hero() {
   const { ref } = useSectionInView("Inicio", 0.5);
 
   return (
-    <section ref={ref} id="home" className="flex flex-col justify-center h-screen sm:mb-0 scroll-mt-[100rem]  max-w-5xl px-4 sm:px-0 ">
+    <section
+      ref={ref}
+      id="home"
+      className="flex flex-col justify-center h-screen sm:mb-0 scroll-mt-[100rem] my-auto max-w-5xl px-4 sm:px-0 "
+    >
       <Particles className="absolute inset-0 -z-10 " />
       <motion.div className="space-y-2 pt-6 pb-8" initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
         <h2 className="primaryText text-xl font-extrabold leading-11 tracking-tight  sm:text-2xl sm:leading-10 md:text-2xl md:leading-14 -mb-2  md:leading-14">
@@ -21,7 +25,7 @@ export default function Hero() {
         <h1 className="primaryText py-2 text-4xl font-black leading-11 tracking-tight  sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 ">
           Enrique Cayupan<span className="text-primary dark:invert">.</span>
         </h1>
-        <p className="pt-5  md:text-lg  ">
+        <p className="pt-5  md:text-lg  max-w-4xl">
           Ingeniero civil informático apasionado por crear soluciones que impulsen el mundo digital, siempre buscando agregar valor y
           resolver problemas de manera innovadora en cada proyecto que emprendo.
         </p>
@@ -29,7 +33,7 @@ export default function Hero() {
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-start gap-2  text-lg font-medium max-w-lg"
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,

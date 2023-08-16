@@ -25,7 +25,7 @@ export default function Project({ title, description, tags, imageUrl, projectLin
       }}
       className="group mb-3 sm:mb-8 last:mb-0 px-2 drop-shadow-sm "
     >
-      <section className="bg-zinc-50 hover:bg-zinc-100 hover:bg-opacity-20 dark:bg-zinc-600 dark:bg-opacity-5 dark:hover:bg-opacity-10 max-w-[42rem] border border-black border-opacity-10 dark:border-white dark:border-opacity-10 rounded-xl overflow-hidden sm:pr-5 relative sm:h-[20.5rem]  transition sm:group-even:pl-8 ">
+      <section className=" max-w-[42rem] border border-black border-opacity-10 dark:border-white dark:border-opacity-10 rounded-xl overflow-hidden sm:pr-5 relative sm:h-[20.5rem]  transition sm:group-even:pl-8 ">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-extrabold primaryText  ">
             {title}
@@ -34,7 +34,7 @@ export default function Project({ title, description, tags, imageUrl, projectLin
           <p className="mt-2 text-sm">{description}</p>
           <ul className="flex flex-wrap py-2 gap-1 my-auto">
             {tags.map((tag, index) => (
-              <li className="bg-zinc-800 text-zinc-50 text-xs dark:bg-zinc-200  dark:text-zinc-950 px-2 py-1  rounded-xl " key={index}>
+              <li className="borderBW text-xs  px-2 py-1  rounded-xl " key={index}>
                 {tag}
               </li>
             ))}

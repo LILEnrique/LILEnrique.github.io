@@ -9,14 +9,20 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import useScroll from "./utils/useScroll";
 
 export default function Header() {
+  const { inTop } = useScroll();
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   const { activeSection, setActiveSection } = useActiveSectionContext();
   return (
-    <header className="fixed z-30 w-full items-center py-2  bg-opacity-80 dark:bg-opacity-75 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] bg-zinc-100 dark:bg-background">
+    <header
+      className={`fixed z-30 w-full items-center py-2  bg-opacity-80 dark:bg-opacity-75  backdrop-blur-[0.5rem] bg-zinc-100 dark:bg-background ${
+        inTop ? "border-b-transparent" : "borderbBW "
+      }`}
+    >
       <motion.div
         className="max-w-5xl px-4 sm:px-0 mx-auto"
         initial={{ y: -100, opacity: 0 }}
