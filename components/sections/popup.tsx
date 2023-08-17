@@ -70,7 +70,7 @@ const Popup = ({ closePopupHandler }: PopupProps) => {
               Flickr
             </Link>{" "}
             y también puedes visitar mi{" "}
-            <Link target="_blank" className="hover:underline bg-primary rounded-lg px-2 py-1" href="/">
+            <Link target="_blank" className="hover:underline bg-primary rounded-lg px-2 py-1" href="https://enrique-blog.vercel.app/">
               Blog Personal
             </Link>{" "}
           </p>
