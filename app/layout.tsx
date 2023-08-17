@@ -1,10 +1,8 @@
 import Header from "@/components/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/Footer";
-import ThemeContextProvider from "@/context/ThemeContext";
-import ThemeSwitch from "@/components/ThemeSwitch";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,16 +13,13 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} relative bg-zinc-100 text-zinc-800 dark:text-zinc-200 dark:bg-background`}>
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+    <html lang="en">
+      <body className={`${inter.className} relative bg-primaryWhite text-zinc-800 dark:text-zinc-200 dark:bg-primaryBlack`}>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

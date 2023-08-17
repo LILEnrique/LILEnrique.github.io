@@ -1,68 +1,53 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+import PaddingContainer from "./layouts/paddingContainer";
 import Link from "next/link";
 import Logo from "@/public/Logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
-import clsx from "clsx";
-import { useActiveSectionContext } from "@/context/active-section-context";
 import useScroll from "./utils/useScroll";
+import { ThemeToggle } from "./theme-toggle";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const { inTop } = useScroll();
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
-  const { activeSection, setActiveSection } = useActiveSectionContext();
   return (
-    <header
-      className={`fixed z-30 w-full items-center py-2  bg-opacity-80 dark:bg-opacity-75  backdrop-blur-[0.5rem] bg-zinc-100 dark:bg-background ${
+    <div
+      className={`fixed left-0 right-0 top-0 z-50 border-b bg-primaryWhite bg-opacity-80  py-4 backdrop-blur-[0.5rem] duration-300  dark:border-b dark:bg-primaryBlack dark:bg-opacity-75 ${
         inTop ? "border-b-transparent" : "borderbBW "
       }`}
     >
-      <motion.div
-        className="max-w-5xl px-4 sm:px-0 mx-auto"
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
-      >
-        <div className="flex items-center justify-between h-16 md:h-14">
-          <motion.a
-            whileHover={{
-              scale: 1.2,
-              rotate: 360,
-              transition: { duration: 0.2 },
-            }}
-            href="#home"
-            className="mr-4 group"
-          >
-            <Image src={Logo} className="opacity-90 dark:invert" width={60} alt="Logo" />
-          </motion.a>
+      <PaddingContainer>
+        <motion.div
+          className="flex h-12 items-center justify-between"
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1, transition: { duration: 0.2 } }}
+        >
+          <Link href="#hero" className="transition-all hover:scale-[1.15] active:scale-105">
+            <Image src={Logo} className="dark:invert" width={50} alt="Logo" priority />
+          </Link>
           {/* Desktop navigation */}
           <nav className="flex font-medium ">
-            <ul className="hidden md:flex flex-wrap items-center justify-end grow text-[0.9rem]  ">
-              {links.map((link, index) =>
-                index === 0 ? null : (
-                  <li className="h-3/4 flex items-center justify-center relative  px-2" key={link.hash}>
-                    <Link
-                      className={clsx("flex w-full items-center justify-center transition  hover:text-primary ", {
-                        "text-primary ": activeSection === link.name,
-                      })}
-                      href={link.hash}
-                      onClick={() => {
-                        setActiveSection(link.name);
-                      }}
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                )
-              )}
+            <ul className="hidden grow flex-wrap items-center justify-end text-[0.9rem] md:flex  ">
+              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.15] active:scale-105">
+                <Link href="#about">Sobre mí</Link>
+              </li>
+              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.15] active:scale-105">
+                <Link href="#skills">Habilidades</Link>
+              </li>
+              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.15] active:scale-105">
+                <Link href="#projects">Proyectos</Link>
+              </li>
+              <li className="relative flex h-3/4 items-center justify-center  px-2">
+                <ThemeToggle />
+              </li>
             </ul>
             {/* Hamburger */}
-            <div onClick={handleClick} className="md:hidden z-10  hover:text-primary  text-lg">
+            <div onClick={handleClick} className="hover:text-primary z-10  md:hidden">
               {!nav ? <FaBars /> : <FaTimes />}
             </div>
             {/* Mobile menu */}
@@ -70,22 +55,31 @@ export default function Header() {
               className={`${
                 !nav
                   ? "hidden"
-                  : "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center bg-zinc-100 dark:bg-background"
+                  : "absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-primaryWhite dark:bg-primaryBlack "
               } `}
             >
-              {links.map((link, index) =>
-                index === 0 ? null : (
-                  <li className="py-6 text-2xl  hover:text-primary  duration-500" key={link.hash}>
-                    <Link href={link.hash} onClick={handleClick}>
-                      {link.name}
-                    </Link>
-                  </li>
-                )
-              )}
+              <li className="hover:text-primary py-6  text-2xl">
+                <Link href="#about" onClick={handleClick}>
+                  Sobre mí
+                </Link>
+              </li>
+              <li className="hover:text-primary py-6  text-2xl">
+                <Link href="#skills" onClick={handleClick}>
+                  Habilidades
+                </Link>
+              </li>
+              <li className="hover:text-primary py-6  text-2xl">
+                <Link href="#projects" onClick={handleClick}>
+                  Proyectos
+                </Link>
+              </li>
+              <li className="hover:text-primary py-6 ">
+                <ThemeToggle />
+              </li>
             </ul>
           </nav>
-        </div>
-      </motion.div>
-    </header>
+        </motion.div>
+      </PaddingContainer>
+    </div>
   );
 }
