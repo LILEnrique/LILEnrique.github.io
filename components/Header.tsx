@@ -42,7 +42,7 @@ export default function Header() {
               <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.15] active:scale-105">
                 <Link href="#projects">Proyectos</Link>
               </li>
-              <li className="relative flex h-3/4 items-center justify-center  px-2">
+              <li className="relative flex h-3/4 items-center justify-center transition-all hover:scale-[1.15] active:scale-105 px-2">
                 <ThemeToggle />
               </li>
             </ul>
