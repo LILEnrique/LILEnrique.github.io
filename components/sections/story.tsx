@@ -21,7 +21,7 @@ const Story = ({ openPopupHandler }: StoryProps) => {
   const scaleUp = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
 
   return (
-    <section id="about" className="relative text-center mt-8 scroll-m-20">
+    <section id="about" className="relative sm:text-center mt-8 scroll-m-20">
       <PaddingContainer>
         <motion.div
           ref={containerRef}
@@ -34,13 +34,16 @@ const Story = ({ openPopupHandler }: StoryProps) => {
         >
           <h2 className="text-4xl font-bold">Acerca de mí</h2>
           {/* Teaser Paragraph */}
-          <div className="relative max-w-lg mx-auto mt-6 mb-10 ">
+          <div className="relative max-w-2xl mx-auto mt-6 mb-10 ">
             {/* Overlay */}
             <div className="absolute inset-0  bg-gradient-to-b from-transparent via-primaryWhite/30 to-primaryWhite/50 dark:from-transparent dark:via-primaryBlack/30 dark:to-primaryBlack/70" />
+            {/* Content */}
             <p className="text-lg">
-              Soy un <strong>Ingeniero Civil Informático</strong> egresado de la <strong>Universidad Católica de Temuco</strong>. Poseo
-              habilidades tanto en el desarrollo de front-end como en el de back-end, así como en la integración de bases de datos y en la
-              seguridad de aplicaciones, utilizando diversas tecnologías y metodologías ágiles.
+              <strong>Ingeniero Civil Informático</strong> con mención en <strong>desarrollo de software</strong>, con{" "}
+              +2 años de experiencia en el diseño e implementación de soluciones tecnológicas innovadoras ,
+              especializado en proyectos de IoT y automatización industrial. He liderado iniciativas para la integración
+              de dispositivos conectados, el análisis de datos en tiempo real y el desarrollo de sistemas escalables,
+              contribuyendo a la optimización de procesos industriales y la mejora de la eficiencia operativa.
             </p>
           </div>
           {/* Button */}

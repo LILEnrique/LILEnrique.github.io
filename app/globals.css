@@ -7,9 +7,6 @@
     @apply !scroll-smooth;
   }
 }
-.borderBW {
-  @apply border border-black border-opacity-10 dark:border-white dark:border-opacity-10;
-}
 
 ::-webkit-scrollbar {
   width: 4px;
@@ -26,4 +23,7 @@
 }
 .borderbBW {
   @apply border-b-black border-opacity-5 dark:border-b-white dark:border-opacity-5;
+}
+.beforeBorderBW {
+  @apply before:border-l before:border-black/10 dark:before:border-white/10;
 }

@@ -48,9 +48,17 @@ const Stacks = () => {
   };
 
   return (
-    <section id="skills" className="relative pt-20 pb-10 sm:pt-32 sm:pb-10 sm:text-center bg-primaryWhite dark:bg-primaryBlack">
+    <section
+      id="skills"
+      className="relative pt-20 pb-10 sm:pt-32 sm:pb-10 sm:text-center bg-primaryWhite dark:bg-primaryBlack"
+    >
       {/* Bacgkround */}
-      <Image className="z-0 object-cover object-center brightness-125 contrast-200" src={BgSection} alt="Hero BG" fill />
+      <Image
+        className="z-0 object-cover object-center brightness-125 contrast-200"
+        src={BgSection}
+        alt="Hero BG"
+        fill
+      />
       {/* Overlay for Backdrop Blur */}
       <div className="absolute inset-0 z-10 opacity-20 " />
       {/* Backgorund Gradient */}
@@ -68,14 +76,15 @@ const Stacks = () => {
             >
               <FeaturedBox>
                 <h2 className="text-2xl sm:text-3xl font-semibold ">Stack de habilidades</h2>
-                <p className="text-zinc-600 dark:text-zinc-300">
-                  Estas son algunas de las tecnologías y herramientas con las que he trabajado durante mi transcurso académico y
-                  profesional. Actualmente con lo que más trabajo es con <span className="font-medium "> Python,</span>
-                  <span className="font-medium "> NodeJS</span>,<span className="font-medium "> React</span> y
-                  <span className="font-medium "> NextJS</span>.
+                <p className="mt-2">
+                  Estas son algunas de las tecnologías y herramientas con las que he trabajado durante mi transcurso
+                  académico y profesional. Actualmente con lo que más trabajo es con{" "}
+                  <span className="font-medium "> Python,</span>
+                  <span className="font-medium "> NodeJS</span>,<span className="font-medium "> React</span>,
+                  <span className="font-medium "> NextJS</span> y <span className="font-medium "> PHP</span>.
                 </p>
                 {/* Logos */}
-                <div className="flex flex-wrap items-center justify-start gap-2 mt-6">
+                <div className="flex flex-wrap items-center justify-start gap-2 mt-6 text-2xl">
                   <LogoLink tech={Tech.Python} />
                   <LogoLink tech={Tech.JavaScript} />
                   <LogoLink tech={Tech.React} />
@@ -100,12 +109,12 @@ const Stacks = () => {
             >
               <RegularBox>
                 <div className="container">
-                  <h2 className="text-2xl font-semibold">Me gusta trabajar con</h2>
-                  <p className="sm:text-sm text-zinc-600 dark:text-zinc-300">
+                  <h2 className="text-2xl sm:text-3xl font-semibold">Me gusta trabajar con</h2>
+                  <p className="mt-2">
                     Estas son algunas tecnologías, librerías y herramienta que me gusta mucho integrar en mis proyectos.
                   </p>
                   {/* Logos */}
-                  <div className="flex flex-wrap gap-2 mt-6">
+                  <div className="flex flex-wrap items-center justify-start gap-2 mt-6 text-2xl">
                     <LogoLink tech={Tech.MongoDB} />
                     <LogoLink tech={Tech.Framer} />
                     <LogoLink tech={Tech.Tailwind} />
@@ -126,12 +135,13 @@ const Stacks = () => {
               className="h-full"
             >
               <RegularBox>
-                <h2 className="text-2xl font-semibold">Aprendiendo</h2>
-                <p className="sm:text-sm text-zinc-600 dark:text-zinc-300">
-                  Como parte de mi proceso continuo de aprendizaje, me gusta estar en constante búsqueda de nuevos conocimientos.
+                <h2 className="text-2xl sm:text-3xl font-semibold">Aprendiendo</h2>
+                <p className="mt-2">
+                  Como parte de mi proceso continuo de aprendizaje, me gusta estar en constante búsqueda de nuevos
+                  conocimientos.
                 </p>
                 {/* Logos */}
-                <div className="flex flex-wrap gap-2 mt-6">
+                <div className="flex flex-wrap items-center justify-start gap-2 mt-6 text-2xl">
                   <LogoLink tech={Tech.Typescript} />
                   <LogoLink tech={Tech.Vercel} />
                   <LogoLink tech={Tech.Firebase} />

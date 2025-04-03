@@ -33,16 +33,19 @@ export default function Header() {
           {/* Desktop navigation */}
           <nav className="flex font-medium ">
             <ul className="hidden grow flex-wrap items-center justify-end text-[0.9rem] md:flex  ">
-              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.15] active:scale-105">
+              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.05] active:scale-105">
                 <Link href="#about">Sobre mí</Link>
               </li>
-              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.15] active:scale-105">
+              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.05] active:scale-105">
+                <Link href="#experience">Experiencia</Link>
+              </li>
+              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.05] active:scale-105">
                 <Link href="#skills">Habilidades</Link>
               </li>
-              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.15] active:scale-105">
+              <li className="relative flex h-3/4 items-center justify-center px-2 transition-all hover:scale-[1.05] active:scale-105">
                 <Link href="#projects">Proyectos</Link>
               </li>
-              <li className="relative flex h-3/4 items-center justify-center transition-all hover:scale-[1.15] active:scale-105 px-2">
+              <li className="relative flex h-3/4 items-center justify-center transition-all hover:scale-[1.05] active:scale-105 px-2">
                 <ThemeToggle />
               </li>
             </ul>

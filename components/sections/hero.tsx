@@ -27,15 +27,18 @@ const Hero = () => {
       {/* Content */}
       <PaddingContainer>
         <motion.div variants={itemAnimation} initial="hidden" animate="visible" className="relative z-20">
-          <span className="font-medium text-zinc-600 dark:text-zinc-300">Hola, mi nombre es</span>
+          <p className="text-primary text-xs md:text-sm font-medium uppercase mb-2">
+            Ingeniero de Software · Full-Stack Developer
+          </p>
           <h1 className="py-2 text-4xl font-extrabold leading-11 tracking-tight  sm:text-4xl sm:leading-10 md:text-6xl md:leading-14   sm:mx-auto md:max-w-2xl">
             {" "}
-            Enrique Cayupan.
+            Hola, soy Enrique 👋🏽
           </h1>
 
           <p className="max-w-xl mx-auto mt-4 text-lg leading-normal text-zinc-600 dark:text-zinc-300">
-            <span className="font-medium">Ingeniero civil informático </span> apasionado por
-            <span className="font-medium"> crear soluciones innovadoras </span>que impulsen el mundo digital.
+            <span className="font-medium">
+              Apasionado por crear soluciones innovadoras que impulsen el mundo digital.{" "}
+            </span>
           </p>
 
           {/* Buttons */}
@@ -59,24 +62,42 @@ const Hero = () => {
               </div>
             </Link>
 
-            {/* Paltform Icons */}
+            {/* Platform Icons */}
             <div className="flex items-center gap-4 ">
-              <Link
-                target="_blank"
-                className="shadow-lg hover:scale-105 duration-150 transition-all ease-out flex items-center justify-center p-4 font-medium rounded-lg bg-zinc-800 hover:bg-zinc-900 text-zinc-100 dark:bg-zinc-200 dark:text-zinc-900 dark:hover:bg-zinc-100 w-fit "
-                href="https://www.linkedin.com/in/enriquefcc/"
-                aria-label="LinkedIn"
+              <div
+                style={{
+                  backgroundImage: "radial-gradient(100% 1338.07% at 4.85% 0%, #8B74F6 0%, #B4E5DC 100%)",
+                  backgroundSize: "200% 200%",
+                  animation: "gradient 5s ease-out infinite",
+                }}
+                className=" p-[2px] rounded-lg shadow-md relative"
               >
-                <FaLinkedin />
-              </Link>
-              <Link
-                target="_blank"
-                className="shadow-lg hover:scale-105 duration-150 transition-all ease-out flex items-center justify-center p-4 font-medium rounded-lg bg-zinc-800 hover:bg-zinc-900 text-zinc-100 dark:bg-zinc-200 dark:text-zinc-900 dark:hover:bg-zinc-100 w-fit "
-                href="https://github.com/LILEnrique"
-                aria-label="GitHub"
+                <Link
+                  target="_blank"
+                  className="shadow-lg hover:scale-105 duration-150 transition-all ease-out flex items-center justify-center p-4 font-medium rounded-lg bg-zinc-800 hover:bg-zinc-900 text-zinc-100 dark:bg-zinc-200 dark:text-zinc-900 dark:hover:bg-zinc-100 w-fit "
+                  href="https://www.linkedin.com/in/enriquefcc/"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin />
+                </Link>
+              </div>
+              <div
+                style={{
+                  backgroundImage: "radial-gradient(100% 1338.07% at 4.85% 0%, #8B74F6 0%, #B4E5DC 100%)",
+                  backgroundSize: "200% 200%",
+                  animation: "gradient 5s ease-out infinite",
+                }}
+                className=" p-[2px] rounded-lg shadow-md relative"
               >
-                <FaGithub />
-              </Link>
+                <Link
+                  target="_blank"
+                  className="shadow-lg hover:scale-105 duration-150 transition-all ease-out flex items-center justify-center p-4 font-medium rounded-lg bg-zinc-800 hover:bg-zinc-900 text-zinc-100 dark:bg-zinc-200 dark:text-zinc-900 dark:hover:bg-zinc-100 w-fit "
+                  href="https://github.com/LILEnrique"
+                  aria-label="GitHub"
+                >
+                  <FaGithub />
+                </Link>
+              </div>
             </div>
           </div>
         </motion.div>

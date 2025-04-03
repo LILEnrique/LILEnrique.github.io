@@ -5,6 +5,7 @@ import Popup from "../sections/popup";
 import Projects from "../sections/projects";
 import Stacks from "../sections/stacks";
 import Story from "../sections/story";
+import Experience from "../sections/experience";
 
 const HomeContainer = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -33,6 +34,7 @@ const HomeContainer = () => {
       {isPopupOpen && <Popup closePopupHandler={closePopupHandler} />}
       <Hero />
       <Story openPopupHandler={openPopupHandler} />
+      <Experience />
       <Stacks />
       <Projects />
     </main>
