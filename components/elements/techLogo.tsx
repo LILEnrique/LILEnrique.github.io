@@ -12,7 +12,6 @@ const HTMLIcon = dynamic(() => import("react-icons/fa").then((mod) => mod.FaHtml
 const CSSIcon = dynamic(() => import("react-icons/fa").then((mod) => mod.FaCss3Alt), { ssr: false });
 const JavaIcon = dynamic(() => import("react-icons/fa").then((mod) => mod.FaJava), { ssr: false });
 const FigmaIcon = dynamic(() => import("react-icons/fa").then((mod) => mod.FaFigma), { ssr: false });
-const SQLServerIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiMicrosoftsqlserver), { ssr: false });
 const FramerIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiFramer), { ssr: false });
 const AntDesignIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiAntdesign), { ssr: false });
 const MaterialUIIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiMui), { ssr: false });
@@ -24,6 +23,13 @@ const MySQLLogo = dynamic(() => import("react-icons/gr").then((mod) => mod.GrMys
 const VercelLogo = dynamic(() => import("react-icons/io5").then((mod) => mod.IoLogoVercel), { ssr: false });
 const AstroLogo = dynamic(() => import("react-icons/si").then((mod) => mod.SiAstro), { ssr: false });
 const FireBaseLogo = dynamic(() => import("react-icons/bi").then((mod) => mod.BiLogoFirebase), { ssr: false });
+const ReactNativeIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiReact), { ssr: false });
+const ViteIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiVite), { ssr: false });
+const FastAPIIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiFastapi), { ssr: false });
+const FlaskIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiFlask), { ssr: false });
+const PM2Icon = dynamic(() => import("react-icons/si").then((mod) => mod.SiPm2), { ssr: false });
+const ExpoIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiExpo), { ssr: false });
+const ExpressIcon = dynamic(() => import("react-icons/si").then((mod) => mod.SiExpress), { ssr: false });
 
 const TechLogo = ({ tech }: { tech: Tech }) => {
   // Render logo
@@ -49,8 +55,6 @@ const TechLogo = ({ tech }: { tech: Tech }) => {
         return <JavaIcon />;
       case Tech.Figma:
         return <FigmaIcon />;
-      case Tech.SQLServer:
-        return <SQLServerIcon />;
       case Tech.Framer:
         return <FramerIcon />;
       case Tech.AntDesign:
@@ -73,6 +77,20 @@ const TechLogo = ({ tech }: { tech: Tech }) => {
         return <AstroLogo />;
       case Tech.Firebase:
         return <FireBaseLogo />;
+      case Tech.ReactNative:
+        return <ReactNativeIcon />;
+      case Tech.Vite:
+        return <ViteIcon />;
+      case Tech.FastAPI:
+        return <FastAPIIcon />;
+      case Tech.Flask:
+        return <FlaskIcon />;
+      case Tech.PM2:
+        return <PM2Icon />;
+      case Tech.Expo:
+        return <ExpoIcon />;
+      case Tech.Express:
+        return <ExpressIcon />;
       default:
         return null;
     }

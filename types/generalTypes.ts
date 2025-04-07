@@ -4,6 +4,7 @@ import Telcon from "@/public/projects/TelC.png";
 import Todo from "@/public/projects/Todolist.png";
 import MACD from "@/public/projects/MACD.png";
 import Cells from "@/public/projects/Cell.png";
+import Enerlytics from "@/public/projects/Enerlytics.png";
 
 export interface OnlyChildrenProps {
   children: React.ReactNode;
@@ -23,7 +24,6 @@ export enum Tech {
   Tailwind = "TailwindCSS",
   MongoDB = "MongoDB",
   MySQL = "MySQL",
-  SQLServer = "SQL Server",
   Framer = "Framer Motion",
   AntDesign = "Ant Design",
   MaterialUI = "Material UI",
@@ -32,6 +32,13 @@ export enum Tech {
   Vercel = "Vercel",
   Astro = "Astro",
   Firebase = "Firebase",
+  ReactNative = "React Native",
+  Vite = "Vite",
+  FastAPI = "FastAPI",
+  Flask = "Flask",
+  PM2 = "PM2",
+  Expo = "Expo",
+  Express = "Express",
 }
 
 export const certifications = [
@@ -71,6 +78,14 @@ export const certifications = [
 
 export const projectsData = [
   {
+    title: "Enerlytics",
+    description:
+      "Dashboard de consumo energético simulado que analiza patrones horarios, muestra tendencias, horas críticas y ventanas óptimas para agendar tareas durante horas de menor carga energética. ",
+    tags: ["ReactJS", "Vite", "TailwindCSS", "ShadCN/UI", "Recharts"],
+    imageUrl: Enerlytics,
+    projectLink: "https://github.com/LILEnrique/Enerlytics",
+  },
+  {
     title: "DMA",
     description:
       "Plataforma educativa para docentes. Permite diseñar clases, visualizar gráficos y generar PDF, utilizando la taxonomía de aprendizaje SOLO como base.",
@@ -96,7 +111,8 @@ export const projectsData = [
   },
   {
     title: "MACD",
-    description: "Aplicación que permite incorporar dinámicamente nuevos campos en formularios sin alterar la estructura base de una BD.",
+    description:
+      "Aplicación que permite incorporar dinámicamente nuevos campos en formularios sin alterar la estructura base de una BD.",
     tags: ["PHP", "Laravel", "Bootstrap", "SQL Server"],
     imageUrl: MACD,
     projectLink: "https://github.com/LILEnrique/Modulo-Administrador-De-Campos-Dinamicos",

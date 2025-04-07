@@ -75,27 +75,29 @@ const Stacks = () => {
               className="sm:col-span-2"
             >
               <FeaturedBox>
-                <h2 className="text-2xl sm:text-3xl font-semibold ">Stack de habilidades</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold">Stack de habilidades</h2>
                 <p className="mt-2">
                   Estas son algunas de las tecnologías y herramientas con las que he trabajado durante mi transcurso
-                  académico y profesional. Actualmente con lo que más trabajo es con{" "}
-                  <span className="font-medium "> Python,</span>
-                  <span className="font-medium "> NodeJS</span>,<span className="font-medium "> React</span>,
-                  <span className="font-medium "> NextJS</span> y <span className="font-medium "> PHP</span>.
+                  académico y profesional. Actualmente, con lo que más trabajo es con{" "}
+                  <span className="font-medium">Python</span>, <span className="font-medium">NodeJS</span>,{" "}
+                  <span className="font-medium">React</span>, <span className="font-medium">React Native</span>,{" "}
+                  <span className="font-medium">PHP</span> y <span className="font-medium">Vite</span>.
                 </p>
-                {/* Logos */}
                 <div className="flex flex-wrap items-center justify-start gap-2 mt-6 text-2xl">
                   <LogoLink tech={Tech.Python} />
+                  <LogoLink tech={Tech.NodeJS} />
                   <LogoLink tech={Tech.JavaScript} />
                   <LogoLink tech={Tech.React} />
-                  <LogoLink tech={Tech.Next} />
                   <LogoLink tech={Tech.PHP} />
                   <LogoLink tech={Tech.Java} />
                   <LogoLink tech={Tech.HTML} />
+                  <LogoLink tech={Tech.Tailwind} />
                   <LogoLink tech={Tech.CSS} />
-                  <LogoLink tech={Tech.NodeJS} />
                   <LogoLink tech={Tech.GitHub} />
-                  <LogoLink tech={Tech.SQLServer} />
+                  <LogoLink tech={Tech.ReactNative} />
+                  <LogoLink tech={Tech.MySQL} />
+                  <LogoLink tech={Tech.MongoDB} />
+                  <LogoLink tech={Tech.PM2} />
                 </div>
               </FeaturedBox>
             </motion.div>
@@ -109,19 +111,18 @@ const Stacks = () => {
             >
               <RegularBox>
                 <div className="container">
-                  <h2 className="text-2xl sm:text-3xl font-semibold">Me gusta trabajar con</h2>
+                  <h2 className="text-xl sm:text-2xl font-semibold">Herramientas que integro</h2>
                   <p className="mt-2">
                     Estas son algunas tecnologías, librerías y herramienta que me gusta mucho integrar en mis proyectos.
                   </p>
-                  {/* Logos */}
                   <div className="flex flex-wrap items-center justify-start gap-2 mt-6 text-2xl">
-                    <LogoLink tech={Tech.MongoDB} />
+                    <LogoLink tech={Tech.Vite} />
+                    <LogoLink tech={Tech.Flask} />
                     <LogoLink tech={Tech.Framer} />
-                    <LogoLink tech={Tech.Tailwind} />
                     <LogoLink tech={Tech.AntDesign} />
-                    <LogoLink tech={Tech.MaterialUI} />
                     <LogoLink tech={Tech.Figma} />
-                    <LogoLink tech={Tech.MySQL} />
+                    <LogoLink tech={Tech.Express} />
+                    <LogoLink tech={Tech.Expo} />
                   </div>
                 </div>
               </RegularBox>
@@ -135,17 +136,17 @@ const Stacks = () => {
               className="h-full"
             >
               <RegularBox>
-                <h2 className="text-2xl sm:text-3xl font-semibold">Aprendiendo</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold">Aprendiendo</h2>
                 <p className="mt-2">
                   Como parte de mi proceso continuo de aprendizaje, me gusta estar en constante búsqueda de nuevos
                   conocimientos.
                 </p>
-                {/* Logos */}
                 <div className="flex flex-wrap items-center justify-start gap-2 mt-6 text-2xl">
                   <LogoLink tech={Tech.Typescript} />
                   <LogoLink tech={Tech.Vercel} />
                   <LogoLink tech={Tech.Firebase} />
                   <LogoLink tech={Tech.Astro} />
+                  <LogoLink tech={Tech.FastAPI} />
                 </div>
               </RegularBox>
             </motion.div>
